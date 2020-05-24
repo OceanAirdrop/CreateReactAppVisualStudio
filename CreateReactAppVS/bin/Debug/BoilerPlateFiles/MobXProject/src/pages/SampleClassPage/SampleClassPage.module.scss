@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+
+.text {
+    background-color: lightblue;
+}
+
+.button {
+    background-color: $base-color; 
+    /*background-color: #e71414;*/
+    width: 100px;
+}
+
+/*div {
+    background-color: yellow;
+}*/

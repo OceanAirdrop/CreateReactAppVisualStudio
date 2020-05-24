@@ -1,0 +1,61 @@
+{
+  "Name": "QwertyBerty",
+  "ProjectFolder": "",
+  "ReactAppCmd": "npx create-react-app",
+  "ReactAppFlags": "--template typescript",
+  "RunNPMAuditFix": true,
+  "CreateVisualStudioSolution": true,
+  "NpmPackageList": [
+    {
+      "Name": "npm install --save typescript @types/node @types/react-dom",
+      "Comment": "typescript bumph"
+    },
+    {
+      "Name": "npm install --save react react-dom react-scripts",
+      "Comment": "react dom"
+    },
+    {
+      "Name": "npm install --save react-router react-router-dom @types/react-router @types/react-router-dom",
+      "Comment": "react router"
+    }
+  ],
+  "ProjectFolderList": [
+    {
+      "Name": "\\src\\Model",
+      "Comment": "Model Data"
+    },
+    {
+      "Name": "\\src\\Services",
+      "Comment": "Api Services"
+    },
+    {
+      "Name": "\\src\\Components",
+      "Comment": "Components!!"
+    },
+    {
+      "Name": "\\src\\Pages",
+      "Comment": "Top Level Pages"
+    },
+    {
+      "Name": "\\src\\DataStore",
+      "Comment": "Shared Data Store"
+    }
+  ],
+  "BoilerPlateFileList": [
+    {
+      "FileName": "tsconfig.json",
+      "SourceDir": "\\MobXProject\\tsconfig.json",
+      "DestDir": "\\tsconfig.json"
+    },
+    {
+      "FileName": "global.scss",
+      "SourceDir": "\\MobXProject\\src\\styles\\global.scss",
+      "DestDir": "\\src\\styles\\global.scss"
+    },
+    {
+      "FileName": "variables.scss",
+      "SourceDir": "\\MobXProject\\src\\styles\\variables.scss",
+      "DestDir": "\\src\\styles\\variables.scss"
+    }
+  ]
+}
