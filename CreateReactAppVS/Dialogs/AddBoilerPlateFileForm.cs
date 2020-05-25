@@ -24,6 +24,7 @@ namespace CreateReactAppVS.Dialogs
         public AddBoilerPlateFileForm()
         {
             InitializeComponent();
+            m_sourceFileName = m_sourceFullDir = m_sourceRelativeDir = m_destinationDir = "";
         }
 
         private string GetAppLocation()
@@ -41,6 +42,9 @@ namespace CreateReactAppVS.Dialogs
 
         private void AddBoilerPlateFileForm_Load(object sender, EventArgs e)
         {
+            textBoxRelativeSourcePath.Text = m_sourceFullDir;
+            textBoxDestination.Text = m_destinationDir;
+
             buttonSelectSourceFile.Select();
         }
 

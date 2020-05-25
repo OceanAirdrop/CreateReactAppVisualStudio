@@ -573,6 +573,61 @@ namespace SetupReactApp
             return result;
         }
 
-      
+        private void ToolStripButtonEditNpmPackage_Click(object sender, EventArgs e)
+        {
+            var listView = listViewNPMPackages;
+            if (listView.SelectedItems.Count > 0)
+            {
+                var item = listView.SelectedItems[0];
+
+                var form = new AddNpmPackageForm();
+                form.textBoxNpmCommand.Text = item.Text;
+                form.textBoxComment.Text = item.SubItems[1].Text;
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    item.Text = form.textBoxNpmCommand.Text;
+                    item.SubItems[1].Text = form.textBoxComment.Text;
+                }
+            }
+        }
+
+        private void ToolStripButtonEditFolder_Click(object sender, EventArgs e)
+        {
+            var listView = listViewProjectFolders;
+            if (listView.SelectedItems.Count > 0)
+            {
+                var item = listView.SelectedItems[0];
+
+                var form = new AddProjFolderForm();
+                form.textBoxFolderName.Text = item.Text;
+                form.textBoxComment.Text = item.SubItems[1].Text;
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    item.Text = form.textBoxFolderName.Text;
+                    item.SubItems[1].Text = form.textBoxComment.Text;
+                }
+            }
+        }
+
+        private void ToolStripButtonEditFileToCopy_Click(object sender, EventArgs e)
+        {
+            var listView = listViewBoilerPlateFiles;
+            if (listView.SelectedItems.Count > 0)
+            {
+                var item = listView.SelectedItems[0];
+
+                var form = new AddBoilerPlateFileForm();
+                form.m_sourceFileName = item.Text;
+                form.m_sourceFullDir = item.SubItems[1].Text;
+                form.m_destinationDir = item.SubItems[2].Text;
+
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    item.Text = form.m_sourceFileName;
+                    item.SubItems[1].Text = form.m_sourceFullDir;
+                    item.SubItems[2].Text = form.m_destinationDir;
+                }
+            }
+        }
     }
 }

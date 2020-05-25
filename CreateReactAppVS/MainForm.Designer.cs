@@ -87,6 +87,9 @@
             this.toolStripButtonOpenLogDirectory = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripButtonEditNpmPackage = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonEditFolder = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonEditFileToCopy = new System.Windows.Forms.ToolStripButton();
             this.tabControl1.SuspendLayout();
             this.tabPageGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -378,6 +381,7 @@
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonAddNPMPackage,
+            this.toolStripButtonEditNpmPackage,
             this.toolStripButtonRemoveNpmPackage});
             this.toolStrip1.Location = new System.Drawing.Point(3, 3);
             this.toolStrip1.Name = "toolStrip1";
@@ -458,6 +462,7 @@
             // 
             this.toolStripAddProjectFolder.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
+            this.toolStripButtonEditFolder,
             this.toolStripButtonRemoveFolder});
             this.toolStripAddProjectFolder.Location = new System.Drawing.Point(3, 3);
             this.toolStripAddProjectFolder.Name = "toolStripAddProjectFolder";
@@ -532,6 +537,7 @@
             // 
             this.toolStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonAddCopyBoilerplateFile,
+            this.toolStripButtonEditFileToCopy,
             this.toolStripButtonRemoveFile});
             this.toolStrip5.Location = new System.Drawing.Point(3, 3);
             this.toolStrip5.Name = "toolStrip5";
@@ -699,6 +705,33 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(48, 17);
             this.toolStripStatusLabel1.Text = "Ready...";
             // 
+            // toolStripButtonEditNpmPackage
+            // 
+            this.toolStripButtonEditNpmPackage.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
+            this.toolStripButtonEditNpmPackage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonEditNpmPackage.Name = "toolStripButtonEditNpmPackage";
+            this.toolStripButtonEditNpmPackage.Size = new System.Drawing.Size(124, 22);
+            this.toolStripButtonEditNpmPackage.Text = "Edit NPM Package";
+            this.toolStripButtonEditNpmPackage.Click += new System.EventHandler(this.ToolStripButtonEditNpmPackage_Click);
+            // 
+            // toolStripButtonEditFolder
+            // 
+            this.toolStripButtonEditFolder.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
+            this.toolStripButtonEditFolder.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonEditFolder.Name = "toolStripButtonEditFolder";
+            this.toolStripButtonEditFolder.Size = new System.Drawing.Size(83, 22);
+            this.toolStripButtonEditFolder.Text = "Edit Folder";
+            this.toolStripButtonEditFolder.Click += new System.EventHandler(this.ToolStripButtonEditFolder_Click);
+            // 
+            // toolStripButtonEditFileToCopy
+            // 
+            this.toolStripButtonEditFileToCopy.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
+            this.toolStripButtonEditFileToCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonEditFileToCopy.Name = "toolStripButtonEditFileToCopy";
+            this.toolStripButtonEditFileToCopy.Size = new System.Drawing.Size(68, 22);
+            this.toolStripButtonEditFileToCopy.Text = "Edit File";
+            this.toolStripButtonEditFileToCopy.Click += new System.EventHandler(this.ToolStripButtonEditFileToCopy_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -808,6 +841,9 @@
         private System.Windows.Forms.ToolStrip toolStrip5;
         private System.Windows.Forms.ToolStripButton toolStripButtonAddCopyBoilerplateFile;
         private System.Windows.Forms.ToolStripButton toolStripButtonRemoveFile;
+        private System.Windows.Forms.ToolStripButton toolStripButtonEditNpmPackage;
+        private System.Windows.Forms.ToolStripButton toolStripButtonEditFolder;
+        private System.Windows.Forms.ToolStripButton toolStripButtonEditFileToCopy;
     }
 }
 
