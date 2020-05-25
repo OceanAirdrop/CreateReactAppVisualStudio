@@ -283,11 +283,17 @@ namespace SetupReactApp
 
             foreach (var item in project.NpmPackageList)
             {
+                if (item.Included == false)
+                    continue;
+
                 CreateReactAppController.NpmInstallPackage("npm.cmd", item.Name.Replace("npm", ""), projectFolder);
             }
 
             foreach (var item in project.ProjectFolderList)
             {
+                if (item.Included == false)
+                    continue;
+
                 var folder = Path.Combine(projectFolder, item.Name);
                 System.IO.Directory.CreateDirectory(folder);
             }
@@ -295,6 +301,9 @@ namespace SetupReactApp
             // Copy file from boiler plate directory to project directory
             foreach (var item in project.BoilerPlateFileList)
             {
+                if (item.Included == false)
+                    continue;
+
                 var source = Path.Combine(GetBoilerPlateLocation(), StrUtils.RemoveLeadingSlash(item.SourceDir));
                 var dest = Path.Combine(projectFolder, StrUtils.RemoveLeadingSlash(item.DestDir));
 
@@ -496,19 +505,19 @@ namespace SetupReactApp
             result.NpmPackageList.Clear();
             foreach ( ListViewItem item in listViewNPMPackages.Items )
             {
-                result.NpmPackageList.Add(new NpmPackage() { Name = item.Text, Comment = item.SubItems[1].Text });
+                result.NpmPackageList.Add(new NpmPackage() { Included = item.Checked, Name = item.Text, Comment = item.SubItems[1].Text });
             }
 
             result.ProjectFolderList.Clear();
             foreach (ListViewItem item in listViewProjectFolders.Items)
             {
-                result.ProjectFolderList.Add(new ProjFolder() { Name = item.Text, Comment = item.SubItems[1].Text });
+                result.ProjectFolderList.Add(new ProjFolder() { Included = item.Checked, Name = item.Text, Comment = item.SubItems[1].Text });
             }
 
             result.BoilerPlateFileList.Clear();
             foreach (ListViewItem item in listViewBoilerPlateFiles.Items)
             {
-                result.BoilerPlateFileList.Add(new BoilerPlateFile() { FileName = item.Text, SourceDir = item.SubItems[1].Text, DestDir = item.SubItems[2].Text });
+                result.BoilerPlateFileList.Add(new BoilerPlateFile() { Included = item.Checked, FileName = item.Text, SourceDir = item.SubItems[1].Text, DestDir = item.SubItems[2].Text });
             }
 
             return result;

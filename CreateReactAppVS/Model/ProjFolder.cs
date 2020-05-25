@@ -8,6 +8,7 @@ namespace CreateReactAppVS.Model
 {
     public class ProjFolder
     {
+        public bool Included { get; set; }
         public string Name { get; set; }
         public string Comment { get; set; }
     }

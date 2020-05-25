@@ -8,6 +8,7 @@ namespace CreateReactAppVS.Model
 {
     public class ReactTemplate
     {
+        public bool Included { get; set; }
         public string Name { get; set; }
         public string ProjectFolder { get; set; }
         public string ReactAppCmd { get; set; }
