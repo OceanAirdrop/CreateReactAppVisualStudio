@@ -8,6 +8,7 @@ using ResourceName = System.String;
 using ResourceContents = System.String;
 using System.Reflection;
 using System.IO;
+using Serilog;
 
 namespace CreateReactAppVS.Utilities
 {
@@ -84,7 +85,7 @@ namespace CreateReactAppVS.Utilities
             }
             catch (Exception ex)
             {
-                // log exception here
+                Log.Error(ex, MethodBase.GetCurrentMethod().Name);
                 throw;
             }
 
@@ -128,7 +129,7 @@ namespace CreateReactAppVS.Utilities
             }
             catch (Exception ex)
             {
-                // log exception here
+                Log.Error(ex, MethodBase.GetCurrentMethod().Name);
                 throw;
             }
 
@@ -178,7 +179,7 @@ namespace CreateReactAppVS.Utilities
             }
             catch (Exception ex)
             {
-                // log exception here
+                Log.Error(ex, MethodBase.GetCurrentMethod().Name);
                 throw;
             }
 
