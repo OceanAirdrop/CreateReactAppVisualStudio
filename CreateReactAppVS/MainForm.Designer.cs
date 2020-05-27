@@ -34,16 +34,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxReactAppFlags = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxNpmCmd = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.checkBoxNPMAuditFix = new System.Windows.Forms.CheckBox();
-            this.buttonSelectFolder = new System.Windows.Forms.Button();
             this.textBoxLocation = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.checkBoxGenerateVisStudioSolution = new System.Windows.Forms.CheckBox();
@@ -55,46 +51,49 @@
             this.Comment = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label10 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonAddNPMPackage = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRemoveNpmPackage = new System.Windows.Forms.ToolStripButton();
             this.tabPageProjectFolder = new System.Windows.Forms.TabPage();
             this.listViewProjectFolders = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label11 = new System.Windows.Forms.Label();
             this.toolStripAddProjectFolder = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRemoveFolder = new System.Windows.Forms.ToolStripButton();
             this.tabPageCopyRequiredFiles = new System.Windows.Forms.TabPage();
             this.listViewBoilerPlateFiles = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.toolStrip5 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonAddCopyBoilerplateFile = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRemoveFile = new System.Windows.Forms.ToolStripButton();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.toolStrip4 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonLoadTemplate = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonSaveTemplate = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonCreateReactApp = new System.Windows.Forms.ToolStripButton();
             this.richTextBoxLogWindow = new System.Windows.Forms.RichTextBox();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButtonOpenLogDirectory = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripButtonLoadTemplate = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonSaveTemplate = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonCreateReactApp = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonSelectFolder = new System.Windows.Forms.Button();
+            this.toolStripButtonAddNPMPackage = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonEditNpmPackage = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonRemoveNpmPackage = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonEditFolder = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonRemoveFolder = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonAddCopyBoilerplateFile = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonEditFileToCopy = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonRemoveFile = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonOpenLogDirectory = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonAddFolder = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tabControl1.SuspendLayout();
             this.tabPageGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPageNPMPackages.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.tabPageProjectFolder.SuspendLayout();
@@ -109,6 +108,9 @@
             this.toolStrip4.SuspendLayout();
             this.toolStrip3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -185,24 +187,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "React App Details";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::CreateReactAppVS.Properties.Resources.icons8_option_16;
-            this.pictureBox3.Location = new System.Drawing.Point(11, 221);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::CreateReactAppVS.Properties.Resources.icons8_option_16;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 114);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -212,15 +196,6 @@
             this.label2.Size = new System.Drawing.Size(90, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Project Details";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CreateReactAppVS.Properties.Resources.icons8_option_16;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 21);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
             // 
             // textBoxReactAppFlags
             // 
@@ -267,19 +242,6 @@
             this.checkBoxNPMAuditFix.TabIndex = 15;
             this.checkBoxNPMAuditFix.Text = "Run npm audit fix";
             this.checkBoxNPMAuditFix.UseVisualStyleBackColor = true;
-            // 
-            // buttonSelectFolder
-            // 
-            this.buttonSelectFolder.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
-            this.buttonSelectFolder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSelectFolder.Location = new System.Drawing.Point(461, 74);
-            this.buttonSelectFolder.Name = "buttonSelectFolder";
-            this.buttonSelectFolder.Size = new System.Drawing.Size(111, 25);
-            this.buttonSelectFolder.TabIndex = 11;
-            this.buttonSelectFolder.Text = "Select Folder";
-            this.buttonSelectFolder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSelectFolder.UseVisualStyleBackColor = true;
-            this.buttonSelectFolder.Click += new System.EventHandler(this.ButtonSelectFolder_Click);
             // 
             // textBoxLocation
             // 
@@ -389,24 +351,6 @@
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButtonAddNPMPackage
-            // 
-            this.toolStripButtonAddNPMPackage.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
-            this.toolStripButtonAddNPMPackage.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonAddNPMPackage.Name = "toolStripButtonAddNPMPackage";
-            this.toolStripButtonAddNPMPackage.Size = new System.Drawing.Size(126, 22);
-            this.toolStripButtonAddNPMPackage.Text = "Add NPM Package";
-            this.toolStripButtonAddNPMPackage.Click += new System.EventHandler(this.ToolStripButtonAddNPMPackage_Click);
-            // 
-            // toolStripButtonRemoveNpmPackage
-            // 
-            this.toolStripButtonRemoveNpmPackage.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
-            this.toolStripButtonRemoveNpmPackage.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonRemoveNpmPackage.Name = "toolStripButtonRemoveNpmPackage";
-            this.toolStripButtonRemoveNpmPackage.Size = new System.Drawing.Size(147, 22);
-            this.toolStripButtonRemoveNpmPackage.Text = "Remove NPM Package";
-            this.toolStripButtonRemoveNpmPackage.Click += new System.EventHandler(this.ToolStripButtonRemoveNpmPackage_Click);
-            // 
             // tabPageProjectFolder
             // 
             this.tabPageProjectFolder.Controls.Add(this.listViewProjectFolders);
@@ -470,24 +414,6 @@
             this.toolStripAddProjectFolder.TabIndex = 4;
             this.toolStripAddProjectFolder.Text = "toolStrip2";
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(85, 22);
-            this.toolStripButton1.Text = "Add Folder";
-            this.toolStripButton1.Click += new System.EventHandler(this.ToolStripAddProjectFolder_Click);
-            // 
-            // toolStripButtonRemoveFolder
-            // 
-            this.toolStripButtonRemoveFolder.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
-            this.toolStripButtonRemoveFolder.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonRemoveFolder.Name = "toolStripButtonRemoveFolder";
-            this.toolStripButtonRemoveFolder.Size = new System.Drawing.Size(106, 22);
-            this.toolStripButtonRemoveFolder.Text = "Remove Folder";
-            this.toolStripButtonRemoveFolder.Click += new System.EventHandler(this.ToolStripButtonRemoveFolder_Click);
-            // 
             // tabPageCopyRequiredFiles
             // 
             this.tabPageCopyRequiredFiles.Controls.Add(this.listViewBoilerPlateFiles);
@@ -536,6 +462,8 @@
             // toolStrip5
             // 
             this.toolStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonAddFolder,
+            this.toolStripSeparator2,
             this.toolStripButtonAddCopyBoilerplateFile,
             this.toolStripButtonEditFileToCopy,
             this.toolStripButtonRemoveFile});
@@ -544,24 +472,6 @@
             this.toolStrip5.Size = new System.Drawing.Size(603, 25);
             this.toolStrip5.TabIndex = 27;
             this.toolStrip5.Text = "toolStrip5";
-            // 
-            // toolStripButtonAddCopyBoilerplateFile
-            // 
-            this.toolStripButtonAddCopyBoilerplateFile.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
-            this.toolStripButtonAddCopyBoilerplateFile.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonAddCopyBoilerplateFile.Name = "toolStripButtonAddCopyBoilerplateFile";
-            this.toolStripButtonAddCopyBoilerplateFile.Size = new System.Drawing.Size(70, 22);
-            this.toolStripButtonAddCopyBoilerplateFile.Text = "Add File";
-            this.toolStripButtonAddCopyBoilerplateFile.Click += new System.EventHandler(this.ToolStripButtonAddCopyBoilerplateFile_Click);
-            // 
-            // toolStripButtonRemoveFile
-            // 
-            this.toolStripButtonRemoveFile.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
-            this.toolStripButtonRemoveFile.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonRemoveFile.Name = "toolStripButtonRemoveFile";
-            this.toolStripButtonRemoveFile.Size = new System.Drawing.Size(91, 22);
-            this.toolStripButtonRemoveFile.Text = "Remove File";
-            this.toolStripButtonRemoveFile.Click += new System.EventHandler(this.ToolStripButtonRemoveFile_Click);
             // 
             // label12
             // 
@@ -619,37 +529,10 @@
             this.toolStrip4.TabIndex = 12;
             this.toolStrip4.Text = "toolStrip4";
             // 
-            // toolStripButtonLoadTemplate
-            // 
-            this.toolStripButtonLoadTemplate.Image = global::CreateReactAppVS.Properties.Resources.icons8_open_view_16;
-            this.toolStripButtonLoadTemplate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonLoadTemplate.Name = "toolStripButtonLoadTemplate";
-            this.toolStripButtonLoadTemplate.Size = new System.Drawing.Size(105, 22);
-            this.toolStripButtonLoadTemplate.Text = "Load Template";
-            this.toolStripButtonLoadTemplate.Click += new System.EventHandler(this.ToolStripButtonLoadTemplate_Click);
-            // 
-            // toolStripButtonSaveTemplate
-            // 
-            this.toolStripButtonSaveTemplate.Image = global::CreateReactAppVS.Properties.Resources.icons8_save_16;
-            this.toolStripButtonSaveTemplate.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonSaveTemplate.Name = "toolStripButtonSaveTemplate";
-            this.toolStripButtonSaveTemplate.Size = new System.Drawing.Size(103, 22);
-            this.toolStripButtonSaveTemplate.Text = "Save Template";
-            this.toolStripButtonSaveTemplate.Click += new System.EventHandler(this.ToolStripButtonSaveTemplate_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripButtonCreateReactApp
-            // 
-            this.toolStripButtonCreateReactApp.Image = global::CreateReactAppVS.Properties.Resources.icons8_react_16;
-            this.toolStripButtonCreateReactApp.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonCreateReactApp.Name = "toolStripButtonCreateReactApp";
-            this.toolStripButtonCreateReactApp.Size = new System.Drawing.Size(118, 22);
-            this.toolStripButtonCreateReactApp.Text = "Create React App";
-            this.toolStripButtonCreateReactApp.Click += new System.EventHandler(this.ToolStripButtonCreateReactApp_Click);
             // 
             // richTextBoxLogWindow
             // 
@@ -680,15 +563,6 @@
             this.toolStripLabel3.Size = new System.Drawing.Size(27, 22);
             this.toolStripLabel3.Text = "Log";
             // 
-            // toolStripButtonOpenLogDirectory
-            // 
-            this.toolStripButtonOpenLogDirectory.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButtonOpenLogDirectory.Image = global::CreateReactAppVS.Properties.Resources.icons8_file_16;
-            this.toolStripButtonOpenLogDirectory.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonOpenLogDirectory.Name = "toolStripButtonOpenLogDirectory";
-            this.toolStripButtonOpenLogDirectory.Size = new System.Drawing.Size(130, 22);
-            this.toolStripButtonOpenLogDirectory.Text = "Open Log Directory";
-            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -705,6 +579,82 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(48, 17);
             this.toolStripStatusLabel1.Text = "Ready...";
             // 
+            // toolStripButtonLoadTemplate
+            // 
+            this.toolStripButtonLoadTemplate.Image = global::CreateReactAppVS.Properties.Resources.icons8_open_view_16;
+            this.toolStripButtonLoadTemplate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonLoadTemplate.Name = "toolStripButtonLoadTemplate";
+            this.toolStripButtonLoadTemplate.Size = new System.Drawing.Size(105, 22);
+            this.toolStripButtonLoadTemplate.Text = "Load Template";
+            this.toolStripButtonLoadTemplate.Click += new System.EventHandler(this.ToolStripButtonLoadTemplate_Click);
+            // 
+            // toolStripButtonSaveTemplate
+            // 
+            this.toolStripButtonSaveTemplate.Image = global::CreateReactAppVS.Properties.Resources.icons8_save_16;
+            this.toolStripButtonSaveTemplate.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonSaveTemplate.Name = "toolStripButtonSaveTemplate";
+            this.toolStripButtonSaveTemplate.Size = new System.Drawing.Size(103, 22);
+            this.toolStripButtonSaveTemplate.Text = "Save Template";
+            this.toolStripButtonSaveTemplate.Click += new System.EventHandler(this.ToolStripButtonSaveTemplate_Click);
+            // 
+            // toolStripButtonCreateReactApp
+            // 
+            this.toolStripButtonCreateReactApp.Image = global::CreateReactAppVS.Properties.Resources.icons8_react_16;
+            this.toolStripButtonCreateReactApp.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonCreateReactApp.Name = "toolStripButtonCreateReactApp";
+            this.toolStripButtonCreateReactApp.Size = new System.Drawing.Size(118, 22);
+            this.toolStripButtonCreateReactApp.Text = "Create React App";
+            this.toolStripButtonCreateReactApp.Click += new System.EventHandler(this.ToolStripButtonCreateReactApp_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::CreateReactAppVS.Properties.Resources.icons8_option_16;
+            this.pictureBox3.Location = new System.Drawing.Point(11, 221);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox3.TabIndex = 22;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::CreateReactAppVS.Properties.Resources.icons8_option_16;
+            this.pictureBox2.Location = new System.Drawing.Point(11, 114);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CreateReactAppVS.Properties.Resources.icons8_option_16;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 21);
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            // 
+            // buttonSelectFolder
+            // 
+            this.buttonSelectFolder.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
+            this.buttonSelectFolder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSelectFolder.Location = new System.Drawing.Point(461, 74);
+            this.buttonSelectFolder.Name = "buttonSelectFolder";
+            this.buttonSelectFolder.Size = new System.Drawing.Size(111, 25);
+            this.buttonSelectFolder.TabIndex = 11;
+            this.buttonSelectFolder.Text = "Select Folder";
+            this.buttonSelectFolder.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonSelectFolder.UseVisualStyleBackColor = true;
+            this.buttonSelectFolder.Click += new System.EventHandler(this.ButtonSelectFolder_Click);
+            // 
+            // toolStripButtonAddNPMPackage
+            // 
+            this.toolStripButtonAddNPMPackage.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
+            this.toolStripButtonAddNPMPackage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAddNPMPackage.Name = "toolStripButtonAddNPMPackage";
+            this.toolStripButtonAddNPMPackage.Size = new System.Drawing.Size(126, 22);
+            this.toolStripButtonAddNPMPackage.Text = "Add NPM Package";
+            this.toolStripButtonAddNPMPackage.Click += new System.EventHandler(this.ToolStripButtonAddNPMPackage_Click);
+            // 
             // toolStripButtonEditNpmPackage
             // 
             this.toolStripButtonEditNpmPackage.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
@@ -713,6 +663,24 @@
             this.toolStripButtonEditNpmPackage.Size = new System.Drawing.Size(124, 22);
             this.toolStripButtonEditNpmPackage.Text = "Edit NPM Package";
             this.toolStripButtonEditNpmPackage.Click += new System.EventHandler(this.ToolStripButtonEditNpmPackage_Click);
+            // 
+            // toolStripButtonRemoveNpmPackage
+            // 
+            this.toolStripButtonRemoveNpmPackage.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
+            this.toolStripButtonRemoveNpmPackage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonRemoveNpmPackage.Name = "toolStripButtonRemoveNpmPackage";
+            this.toolStripButtonRemoveNpmPackage.Size = new System.Drawing.Size(147, 22);
+            this.toolStripButtonRemoveNpmPackage.Text = "Remove NPM Package";
+            this.toolStripButtonRemoveNpmPackage.Click += new System.EventHandler(this.ToolStripButtonRemoveNpmPackage_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(85, 22);
+            this.toolStripButton1.Text = "Add Folder";
+            this.toolStripButton1.Click += new System.EventHandler(this.ToolStripAddProjectFolder_Click);
             // 
             // toolStripButtonEditFolder
             // 
@@ -723,6 +691,24 @@
             this.toolStripButtonEditFolder.Text = "Edit Folder";
             this.toolStripButtonEditFolder.Click += new System.EventHandler(this.ToolStripButtonEditFolder_Click);
             // 
+            // toolStripButtonRemoveFolder
+            // 
+            this.toolStripButtonRemoveFolder.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
+            this.toolStripButtonRemoveFolder.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonRemoveFolder.Name = "toolStripButtonRemoveFolder";
+            this.toolStripButtonRemoveFolder.Size = new System.Drawing.Size(106, 22);
+            this.toolStripButtonRemoveFolder.Text = "Remove Folder";
+            this.toolStripButtonRemoveFolder.Click += new System.EventHandler(this.ToolStripButtonRemoveFolder_Click);
+            // 
+            // toolStripButtonAddCopyBoilerplateFile
+            // 
+            this.toolStripButtonAddCopyBoilerplateFile.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
+            this.toolStripButtonAddCopyBoilerplateFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAddCopyBoilerplateFile.Name = "toolStripButtonAddCopyBoilerplateFile";
+            this.toolStripButtonAddCopyBoilerplateFile.Size = new System.Drawing.Size(70, 22);
+            this.toolStripButtonAddCopyBoilerplateFile.Text = "Add File";
+            this.toolStripButtonAddCopyBoilerplateFile.Click += new System.EventHandler(this.ToolStripButtonAddCopyBoilerplateFile_Click);
+            // 
             // toolStripButtonEditFileToCopy
             // 
             this.toolStripButtonEditFileToCopy.Image = global::CreateReactAppVS.Properties.Resources.icons8_package_16;
@@ -731,6 +717,38 @@
             this.toolStripButtonEditFileToCopy.Size = new System.Drawing.Size(68, 22);
             this.toolStripButtonEditFileToCopy.Text = "Edit File";
             this.toolStripButtonEditFileToCopy.Click += new System.EventHandler(this.ToolStripButtonEditFileToCopy_Click);
+            // 
+            // toolStripButtonRemoveFile
+            // 
+            this.toolStripButtonRemoveFile.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
+            this.toolStripButtonRemoveFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonRemoveFile.Name = "toolStripButtonRemoveFile";
+            this.toolStripButtonRemoveFile.Size = new System.Drawing.Size(91, 22);
+            this.toolStripButtonRemoveFile.Text = "Remove File";
+            this.toolStripButtonRemoveFile.Click += new System.EventHandler(this.ToolStripButtonRemoveFile_Click);
+            // 
+            // toolStripButtonOpenLogDirectory
+            // 
+            this.toolStripButtonOpenLogDirectory.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButtonOpenLogDirectory.Image = global::CreateReactAppVS.Properties.Resources.icons8_file_16;
+            this.toolStripButtonOpenLogDirectory.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonOpenLogDirectory.Name = "toolStripButtonOpenLogDirectory";
+            this.toolStripButtonOpenLogDirectory.Size = new System.Drawing.Size(130, 22);
+            this.toolStripButtonOpenLogDirectory.Text = "Open Log Directory";
+            // 
+            // toolStripButtonAddFolder
+            // 
+            this.toolStripButtonAddFolder.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
+            this.toolStripButtonAddFolder.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAddFolder.Name = "toolStripButtonAddFolder";
+            this.toolStripButtonAddFolder.Size = new System.Drawing.Size(85, 22);
+            this.toolStripButtonAddFolder.Text = "Add Folder";
+            this.toolStripButtonAddFolder.Click += new System.EventHandler(this.AddBoilerplateFolder_Button);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // MainForm
             // 
@@ -748,9 +766,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPageGeneral.ResumeLayout(false);
             this.tabPageGeneral.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPageNPMPackages.ResumeLayout(false);
             this.tabPageNPMPackages.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -776,6 +791,9 @@
             this.toolStrip3.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -844,6 +862,8 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonEditNpmPackage;
         private System.Windows.Forms.ToolStripButton toolStripButtonEditFolder;
         private System.Windows.Forms.ToolStripButton toolStripButtonEditFileToCopy;
+        private System.Windows.Forms.ToolStripButton toolStripButtonAddFolder;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 

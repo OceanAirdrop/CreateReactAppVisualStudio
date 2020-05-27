@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.textBoxDestination = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonSelectSourceFile = new System.Windows.Forms.Button();
             this.textBoxRelativeSourcePath = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
+            this.buttonSelectSourceFile = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,17 @@
             this.panel1.Size = new System.Drawing.Size(457, 210);
             this.panel1.TabIndex = 5;
             // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.label12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label12.Location = new System.Drawing.Point(0, 180);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(457, 30);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "To make sure the file is copied to the correct directory manually alter the desti" +
+    "nation file: eg: \\src\\pages\\some-page.ts ";
+            // 
             // textBoxDestination
             // 
             this.textBoxDestination.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -74,21 +85,6 @@
             this.label1.Size = new System.Drawing.Size(79, 13);
             this.label1.TabIndex = 15;
             this.label1.Text = "Destination File";
-            // 
-            // buttonSelectSourceFile
-            // 
-            this.buttonSelectSourceFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSelectSourceFile.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
-            this.buttonSelectSourceFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonSelectSourceFile.Location = new System.Drawing.Point(319, 69);
-            this.buttonSelectSourceFile.Name = "buttonSelectSourceFile";
-            this.buttonSelectSourceFile.Size = new System.Drawing.Size(99, 25);
-            this.buttonSelectSourceFile.TabIndex = 14;
-            this.buttonSelectSourceFile.Text = "Select Folder";
-            this.buttonSelectSourceFile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonSelectSourceFile.UseVisualStyleBackColor = true;
-            this.buttonSelectSourceFile.Click += new System.EventHandler(this.ButtonSelectSourceFile_Click);
             // 
             // textBoxRelativeSourcePath
             // 
@@ -131,16 +127,20 @@
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
-            // label12
+            // buttonSelectSourceFile
             // 
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label12.Location = new System.Drawing.Point(0, 180);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(457, 30);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "To make sure the file is copied to the correct directory manually alter the desti" +
-    "nation file: eg: \\src\\pages\\some-page.ts ";
+            this.buttonSelectSourceFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSelectSourceFile.Image = global::CreateReactAppVS.Properties.Resources.icons8_folder_16;
+            this.buttonSelectSourceFile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSelectSourceFile.Location = new System.Drawing.Point(319, 69);
+            this.buttonSelectSourceFile.Name = "buttonSelectSourceFile";
+            this.buttonSelectSourceFile.Size = new System.Drawing.Size(99, 25);
+            this.buttonSelectSourceFile.TabIndex = 14;
+            this.buttonSelectSourceFile.Text = "Select File";
+            this.buttonSelectSourceFile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonSelectSourceFile.UseVisualStyleBackColor = true;
+            this.buttonSelectSourceFile.Click += new System.EventHandler(this.ButtonSelectSourceFile_Click);
             // 
             // AddBoilerPlateFileForm
             // 

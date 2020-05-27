@@ -1,23 +1,17 @@
 ﻿using CreateReactAppVS.Controller;
+using CreateReactAppVS.Dialogs;
 using CreateReactAppVS.Model;
 using CreateReactAppVS.SeriLogging;
 using CreateReactAppVS.Utilities;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using Newtonsoft.Json;
 using Serilog;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.WindowsAPICodePack.Dialogs;
-using CreateReactAppVS.Dialogs;
 
 namespace SetupReactApp
 {
@@ -626,6 +620,18 @@ namespace SetupReactApp
                     item.Text = form.m_sourceFileName;
                     item.SubItems[1].Text = form.m_sourceFullDir;
                     item.SubItems[2].Text = form.m_destinationDir;
+                }
+            }
+        }
+
+        private void AddBoilerplateFolder_Button(object sender, EventArgs e)
+        {
+            var form = new AddBoilerplateFolderForm();
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                foreach( var item in form.m_list )
+                {
+                    AddToBoilerplateList(item.FileName, item.SourceDir, item.DestDir);
                 }
             }
         }

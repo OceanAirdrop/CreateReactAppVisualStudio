@@ -79,6 +79,12 @@
     <Compile Include="Dialogs\AddBoilerPlateFileForm.Designer.cs">
       <DependentUpon>AddBoilerPlateFileForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\AddBoilerplateFolderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddBoilerplateFolderForm.Designer.cs">
+      <DependentUpon>AddBoilerplateFolderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dialogs\AddNpmPackageForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     <Compile Include="Utilities\StrUtils.cs" />
     <EmbeddedResource Include="Dialogs\AddBoilerPlateFileForm.resx">
       <DependentUpon>AddBoilerPlateFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddBoilerplateFolderForm.resx">
+      <DependentUpon>AddBoilerplateFolderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\AddNpmPackageForm.resx">
       <DependentUpon>AddNpmPackageForm.cs</DependentUpon>
