@@ -29,6 +29,9 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Start_Web_Server' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
   
   {{folder_group}}
   {{file_group}}
@@ -82,18 +85,25 @@
     <!--  <ExecAsync FilePath="npm.cmd" Arguments="start" />  -->
   </Target>
 
+  <Target Name="AfterCompile" Condition="'$(Configuration)' == 'Start_Web_Server'" >
+    <Message Importance="High" Text="$(Configuration)" />
+    <Message Importance="High" Text="Running Command: npm start" />
+    <ExecAsync FilePath="npm.cmd" Arguments="start" />
+  </Target>
 
   <!-- If the build is RELEASE then run the following commands -->
  <Target Name="AfterBuild" Condition="'$(Configuration)' == 'Release' ">
+   <Message Importance="High" Text="Release" />
    <Message Importance="High" Text="Running Command: npm run build" />
-   <ExecAsync FilePath="npm.cmd" Arguments="run build" />
+   <ExecAsyncWaitForExit FilePath="npm.cmd" Arguments="run build" />
   </Target>
- 
+
  
   <!-- If the build is debug then runthe following commands -->
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Debug'">
-     <Message Importance="High" Text="Running Command: npm start" />
-    <ExecAsync FilePath="npm.cmd" Arguments="start" />
+    <Message Importance="High" Text="Release" />
+    <Message Importance="High" Text="Running Command: npm run build" />
+    <ExecAsyncWaitForExit FilePath="npm.cmd" Arguments="run build" />
   </Target>
   
   <!-- https://stackoverflow.com/questions/2387456/msbuild-exec-task-without-blocking -->
@@ -106,14 +116,40 @@
       <Arguments ParameterType="System.String" Required="true" />
     </ParameterGroup>
     <Task>
-      <Code Type="Fragment" Language="cs"><![CDATA[
+      <Code Type="Fragment" Language="cs">
+    <![CDATA[
   string name = System.IO.Path.GetFileNameWithoutExtension(FilePath);
-  Log.LogMessage("Starting {0}...", name);        
+  Log.LogMessage(MessageImportance.High, "Starting {0}...", name);        
   System.Diagnostics.ProcessStartInfo processStartInfo = new System.Diagnostics.ProcessStartInfo(FilePath, Arguments);
   processStartInfo.UseShellExecute = true;
   System.Diagnostics.Process.Start(processStartInfo);
-  Log.LogMessage("Finished running process {0}.", name);
+  Log.LogMessage(MessageImportance.High, "Finished running process {0}.", name);
   ]]></Code>
+    </Task>
+  </UsingTask>
+
+  <!-- https://stackoverflow.com/questions/2387456/msbuild-exec-task-without-blocking -->
+  <!--Launch a Process in Parallel-->
+  <UsingTask TaskName="ExecAsyncWaitForExit" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+    <ParameterGroup>
+      <!--The file path is the full path to the executable file to run-->
+      <FilePath ParameterType="System.String" Required="true" />
+      <!--The arguments should contain all the command line arguments that need to be sent to the application-->
+      <Arguments ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
+  string name = System.IO.Path.GetFileNameWithoutExtension(FilePath);
+  Log.LogMessage(MessageImportance.High, "Starting {0}...", name);        
+  System.Diagnostics.ProcessStartInfo processStartInfo = new System.Diagnostics.ProcessStartInfo(FilePath, Arguments);
+  processStartInfo.UseShellExecute = true;
+  System.Diagnostics.Process process = System.Diagnostics.Process.Start(processStartInfo);
+  Log.LogMessage(MessageImportance.High, "Waiting for process to finish");
+  process.WaitForExit();
+  Log.LogMessage(MessageImportance.High, "Finished running process {0}.", name);
+  ]]>
+      </Code>
     </Task>
   </UsingTask>
 </Project>

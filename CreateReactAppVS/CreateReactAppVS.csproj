@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Controller\CommandLine.cs" />
     <Compile Include="Controller\CreateReactAppController.cs" />
+    <Compile Include="Controller\GenerateBatchCmds.cs" />
     <Compile Include="Controller\GenVisualStudioSolution.cs" />
     <Compile Include="Dialogs\AddBoilerPlateFileForm.cs">
       <SubType>Form</SubType>

@@ -307,6 +307,8 @@ namespace SetupReactApp
                 File.Copy(source, dest, true);
             }
 
+            GenerateBatchCmds.GenerateBatchFiles(projectFolder, project);
+
             var solutionfile = GenVisualStudioSolution.Generate(project.Name.ToLower(), projectFolder);
 
             // Open File Explorer to the location of project
